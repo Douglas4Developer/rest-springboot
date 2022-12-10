@@ -22,7 +22,7 @@ public class ProdutoController {
         produtoRepository.save(produto);
         return  produto;
     }
-    ////ESTUDAR Iterablee Optional
+
     @GetMapping
     public Iterable<Produto> obterProdutos(){
         return produtoRepository.findAll();

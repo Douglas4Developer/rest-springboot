@@ -13,13 +13,13 @@ public class ClienteController {
 
     @GetMapping("/{id}")
     public Cliente obterClientePorId1(@PathVariable  int id){
-        return new Cliente( id, "Douglas", "708.321.121-35");
+        return new Cliente( id, "Douglas", "468.655.990-12");
     }
 
     @GetMapping
     public Cliente obterClientePorId2(
             @RequestParam(name = "id", defaultValue = "1") int id){
-        return new Cliente( id, "Douglas", "708.321.121-35");
+        return new Cliente( id, "Douglas", "468.655.990-12");
     }
 
 }
